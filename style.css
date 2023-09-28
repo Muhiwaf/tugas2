@@ -1,0 +1,98 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hide-content {
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #a5a5a5;
+  }
+  
+  .image-size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+
+  }
+  .profile{
+    border-right: 1px solid gray;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .form-content{
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* gap: 20px;   */
+    border: 1px solid black; 
+  }
+  .form-content>input, #submitButton{
+    width: 100%;
+  }
+  .input{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+  .input-file{
+    margin: 10px 0;
+  }
+  #submitButton{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+  }
+  label{
+    font-weight: bold;
+    font-size: large;
+  }
+  #editButton{
+    background-color: rgb(255, 166, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: medium
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div class="container">
+    <div class="profile">
+      <img id="imageTarget" src="./default.jpg" alt="" srcset="" class="image-size">
+      <div>
+        <h2>Nama: &emsp;&emsp;<span id="nameTarget">-</span></h2>
+        <h2>Role: &emsp;&emsp;<span id="roleTarget">-</span></h2>
+        <h2>Tinggi: &emsp;&emsp;<span id="heightTarget">-</span> cm</h2>
+      </div>
+    </div>
+    <div>
+      <h2>Avaibility: &emsp;&emsp;<span id="availabilityTarget">-</span></h2>
+      <h2>Usia: &emsp;&emsp;<span id="usiaTarget">-</span> Y.O</h2>
+      <h2>Lokasi: &emsp;&emsp;<span id="lokasiTarget">-</span></h2>
+      <h2>Pengalaman: &emsp;&emsp;<span id="pengalamanTarget">-</span></h2>
+      <h2>Email: &emsp;&emsp;<span id="emailTarget">-</span></h2>
+      <button id="editButton">Edit</button>
+    </div>
+  </div>
+  <!-- <button id="close-editButton">edit</button> -->
+  <form id="myForm" class="hide-content">
+    <div class="form-content">
+      <label for="formName">Nama</label>
+      <input id="formName" type="text" name="username" class="input">
+      <label for="formRole">Role</label>
+      <input id="formRole" type="text" name="role" class="input">
+      <label for="formHeight">Tinggi Badan</label>
+      <input id="formHeight" type="number" min="0" name="userheight" class="input">
+      
+      <label for="formAvailability">Avaibility</label>
+      <input id="formAvailability" type="text" min="0" name="useravaibility" class="input">
+
+      <label for="formUsia">Age</label>
+      <input id="formUsia" type="number" min="0" name="userusia" class="input">
+
+      <label for="formLokasi">Location</label>
+      <input id="formLokasi" type="text" min="0" name="userlokasi" class="input">
+
+      <label for="formPengalaman">Experience</label>
+      <input id="formPengalaman" type="number" min="0" name="userpengalaman" class="input">
+
+      <label for="formEmail">Email</label>
+      <input id="formEmail" type="email" min="0" name="useremail" class="input">
+
+      <label for="formImage">Foto</label>
+      <input type="file" id="formImage" name="userpicture" accept="image/png, image/jpeg" class="input-file">
+      <button id="submitButton">Simpan</button>
+    </div>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
